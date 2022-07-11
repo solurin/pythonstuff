@@ -1,0 +1,185 @@
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> mystring= 'what are you doing??'
+>>> mylist = [2, 3, 4, 5, 6]
+>>> for item in mystring:
+	print(item)
+
+	
+w
+h
+a
+t
+ 
+a
+r
+e
+ 
+y
+o
+u
+ 
+d
+o
+i
+n
+g
+?
+?
+>>> for item in mylist:
+	print(item)
+
+	
+2
+3
+4
+5
+6
+>>> for item in 45:
+	print(item)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#10>", line 1, in <module>
+    for item in 45:
+TypeError: 'int' object is not iterable
+>>> numTimes = 0
+>>> mystring
+'what are you doing??'
+>>> for item in mystring
+SyntaxError: invalid syntax
+>>> for item in mystring:
+	print(item)
+	numTimes = numTimes + 1
+
+	
+w
+h
+a
+t
+ 
+a
+r
+e
+ 
+y
+o
+u
+ 
+d
+o
+i
+n
+g
+?
+?
+>>> >>> for item in mystring:
+	print(item)
+	numTimes = numTimes + 1
+	
+SyntaxError: invalid syntax
+>>> for item in mystring:
+	print(item)
+	numTimes = numTimes + 1
+	print('in loop', numTimes, 'times')
+
+	
+w
+in loop 21 times
+h
+in loop 22 times
+a
+in loop 23 times
+t
+in loop 24 times
+ 
+in loop 25 times
+a
+in loop 26 times
+r
+in loop 27 times
+e
+in loop 28 times
+ 
+in loop 29 times
+y
+in loop 30 times
+o
+in loop 31 times
+u
+in loop 32 times
+ 
+in loop 33 times
+d
+in loop 34 times
+o
+in loop 35 times
+i
+in loop 36 times
+n
+in loop 37 times
+g
+in loop 38 times
+?
+in loop 39 times
+?
+in loop 40 times
+>>> len(mystring)
+20
+>>> for i in range(6):
+	print('hello!')
+
+	
+hello!
+hello!
+hello!
+hello!
+hello!
+hello!
+>>> for i in range(6):
+	print(i)
+
+	
+0
+1
+2
+3
+4
+5
+>>> sum = 0
+>>> for i in range(3):
+	num = input('type a number: ')
+	sum = sum + num
+
+	
+type a number: 3
+Traceback (most recent call last):
+  File "<pyshell#36>", line 3, in <module>
+    sum = sum + num
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> sum
+0
+>>> for i in range(3):
+	num = int(input('type an integer: '))
+	sum = sum + num
+
+	
+type an integer: 6
+type an integer: 6
+type an integer: 6
+>>> sum
+18
+>>> num
+6
+>>> emptystring = ''
+>>> len(emptystring)
+0
+>>> emptyset = []
+>>> emptylist = []
+>>> len(emptylist)
+0
+>>> for item in emptylist:
+	print(item)
+
+	
+>>> 
